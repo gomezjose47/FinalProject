@@ -41,3 +41,36 @@ print to user The ball will hit the ground in about _ seconds"
 
 main():
 """
+
+
+def main():
+  getinput()
+
+def getinput():
+  h = int(input("Enter the initial height of the ball: "))
+  v = int(input("Enter the inital velocity of the ball: "))
+  isvalid(h,v)
+
+def isvalid(h,v):
+  if ((h <= 0) or (v <= 0)):
+    print("Please enter positive values")
+    getinput()
+
+  else:
+      maxheight(h,v)
+
+def maxheight(h,v):
+  t = (v/32)
+  maxH = (h + (v*h) - (16*t*t))
+  print("The maximum heigh of the ball is ", maxH, "feet.")
+  balltime (h,v)
+
+def balltime (h,v):
+  t = 0 
+  ballHeight = (h + (v*t) - (16*t*t))
+  while expression: (ballHeight >= 0)
+  t += 0.1
+  ballHeight = (h + (v*t) - (16*t*t))
+  print("The ball will hit the ground aprroximately after", ballHeight, "seconds.")
+
+main()
