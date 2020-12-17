@@ -14,6 +14,30 @@ however they would like.
 """
 
 """
+defmain():
 
+getinput() 
+H = user inputs initial height of ball
+V = user inputs initial velocity of ball
 
+isvalid()
+determines if (h,V) are valid and positive
+if not positive 
+print to user "enter positive values"
+else
+
+Maxheight()
+t = v / 32 to find time it take to reach max height
+plug answer into (h + (v*h) - (16*t*t)) 
+print to user height of ball is " _" feet
+
+Balltime()
+set time = 0
+do equation (h + (v*t)-(16*t*t))
+while loop: while ball height is greater than or equal to 0
+set time to atke height every .1 sec
+use equation to determine ball height after every .1 sec (h + (v*t)-(16*t*t))
+print to user The ball will hit the ground in about _ seconds"
+
+main():
 """
